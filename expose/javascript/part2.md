@@ -1,5 +1,7 @@
 # Expose - Javascript: Part2
 
+### Vairable Declaration
+
 1. Line 12 will print the number ```3```.
    
    This is because the variable ```i``` is assigned as a ```var```, so it has no block scope,
@@ -74,10 +76,11 @@
    just like what we did in the first example code, and return the same result.
 
 --------
-  
+
+9. 
 
 
-
+### Data Type
 
 
 
