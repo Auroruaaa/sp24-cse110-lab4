@@ -153,17 +153,49 @@
 
 ### Loops
 
-16. Link to the JS file [part2-question16](https://github.com/Auroruaaa/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js).
+16. Link to the JS file [part2-question16.js](https://github.com/Auroruaaa/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js).
 
 --------
 
-17. 
+### Functions
 
+17. The resulf would be `[ 2, 4, 6 ]`.
 
+    We first turn to the function `modifyArray` with two inputs
+    where `array = [1,2,3]` and `callback` is the function `doSomething`.
+    So in the `for` loop under `modifyArray`, it will push the result of `doSomething` to `newArr`.
 
+    When it comes to compiling the function `doSomething`, it takes the `i`th element of `array` as the input,
+    and return the doubled input.
 
+    Back to the function `modifyArray`, each time in the `for` loop, the `i`th element of `array` will be doubled
+    and pushed to the array `newArr`.
+    Therefore, the result of `modifyArray` will be an array that doubles each element of the input array.
 
+--------
 
+### setInterval(), setTimeout(), clearTimeout()
+
+18. Link to the JS file [part2-question18.js](https://github.com/Auroruaaa/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js)
+
+--------
+
+19. The output should be:
+    ```
+    1
+    4
+    3
+    2
+    ```
+   When calling the function `printNums`, line 2 will immediately compile and print `1`. 
+   
+   Line 3 will wait for 1 second to print because it calles `setTimeout` and have to wait for 1000ms.
+
+   Then it comes to Line 4, where the delay of printing is 0ms. 
+   However, it does not compile immediately because it is put into a queue and scheduled to run at the next opportunity,
+   so Line 5 will print before that, thus we will get `4` in the second.
+
+   After that, Line 4 will print `3`, and Line 3 will print `2` one seconde later.
 
 
 
