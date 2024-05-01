@@ -15,7 +15,7 @@ for (let property in statistics) {
       console.log(`${property}: ${statistics[property]}`);
   }
   // if not, check if the value of the property is an odd number
-  else if ((statistics[property] % 2) == 1) {
+  else if ((statistics[property] % 2) === 1) {
     console.log(`${property}: ${statistics[property]}`);
   }
 }  
