@@ -5,6 +5,5 @@ function showtime() {
     console.log(time);
 }
 
-let IntervId = setInterval(showtime, 1000);
+setInterval(showtime, 1000);
 
-// IclearInterval(IntervId);
